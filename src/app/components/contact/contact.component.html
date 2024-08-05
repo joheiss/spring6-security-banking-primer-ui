@@ -20,7 +20,7 @@
             </div>
             <div class="cont-right">
               <h6>Email Us</h6>
-              <p><a href="mailto:support@eazybank.com" class="mail">support@eazybank.com</a></p>
+              <p><a href="mailto:contact@jovisco-bank.com" class="mail">contact@jovisco-bank.com</a></p>
             </div>
           </div>
           <div class="cont-top margin-up">
@@ -34,7 +34,8 @@
           </div>
         </div>
         <div class="map-content-9">
-          <span class="text-success" *ngIf="model.contactId">Your message is submitted. Reference ID is {{model.contactId}}</span>
+          <span class="text-success" *ngIf="model.contactId">Your message is submitted. Reference ID is
+            {{model.contactId}}</span>
           <form (ngSubmit)="contactForm.valid && saveMessage(contactForm)" #contactForm="ngForm">
             <div class="twice">
               <input type="text" class="form-control" name="contactName" id="contactName" placeholder="Name" required
