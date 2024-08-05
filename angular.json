@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "bank-app-ui:build:production"
+              "buildTarget": "bank-app-ui:build:production"
             },
             "development": {
-              "browserTarget": "bank-app-ui:build:development"
+              "buildTarget": "bank-app-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bank-app-ui:build"
+            "buildTarget": "bank-app-ui:build"
           }
         },
         "test": {
