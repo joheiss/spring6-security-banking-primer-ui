@@ -6,7 +6,7 @@
         <h3 class="heading-21921">Total Due Amount</h3>
       </div>
     </div>
-    <div class="row text-white align-items-center text-center h-100">
+    <div class="row text-white align-items-center text-center">
       <div class="col-md-4 bg-dark p-5 " style="height:130px;">
         <h1 class="text-white">{{currOutstandingAmt | currency}}</h1>
       </div>
@@ -30,13 +30,13 @@
       </thead>
       <tbody>
         @for (card of cards; track card) {
-          <tr>
-            <th>{{card.cardNumber}}</th>
-            <td>{{card.cardType}}</td>
-            <td>{{card.totalLimit | currency}}</td>
-            <td>{{card.amountUsed | currency}}</td>
-            <td>{{card.availableAmount | currency}}</td>
-          </tr>
+        <tr>
+          <th>{{card.cardNumber}}</th>
+          <td>{{card.cardType}}</td>
+          <td>{{card.totalLimit | currency}}</td>
+          <td>{{card.amountUsed | currency}}</td>
+          <td>{{card.availableAmount | currency}}</td>
+        </tr>
         }
       </tbody>
     </table>

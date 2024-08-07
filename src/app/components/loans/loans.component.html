@@ -6,7 +6,7 @@
         <h3 class="heading-21921">Current Outstanding Balance</h3>
       </div>
     </div>
-    <div class="row text-white align-items-center text-center h-100">
+    <div class="row text-white align-items-center text-center">
       <div class="col-md-4 bg-dark p-5 " style="height:130px;">
         <h1 class="text-white">{{currOutstandingBalance | currency}}</h1>
       </div>
@@ -30,13 +30,13 @@
       </thead>
       <tbody>
         @for (loan of loans; track loan) {
-          <tr>
-            <th>{{loan.startDt}}</th>
-            <td>{{loan.loanType}}</td>
-            <td>{{loan.totalLoan | currency}}</td>
-            <td>{{loan.amountPaid | currency}}</td>
-            <td>{{loan.outstandingAmount | currency}}</td>
-          </tr>
+        <tr>
+          <th>{{loan.startDt}}</th>
+          <td>{{loan.loanType}}</td>
+          <td>{{loan.totalLoan | currency}}</td>
+          <td>{{loan.amountPaid | currency}}</td>
+          <td>{{loan.outstandingAmount | currency}}</td>
+        </tr>
         }
       </tbody>
     </table>

@@ -1,0 +1,9 @@
+{
+  "graalvm.home": "/Library/Java/JavaVirtualMachines/graalvm-jdk-22/Contents/Home",
+  "graalvm.installations": [
+    "/Library/Java/JavaVirtualMachines/graalvm-jdk-22/Contents/Home"
+  ],
+  "terminal.integrated.env.osx": {
+    "GRAALVM_HOME": "/Library/Java/JavaVirtualMachines/graalvm-jdk-22/Contents/Home"
+  }
+}
